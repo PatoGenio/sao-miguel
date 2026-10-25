@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30 Dias com São Miguel Arcanjo · Cântico do Lar</title>
+<meta name="description" content="30 orações de proteção para a sua casa e a sua família, uma para cada dia. Livro digital (PDF) do canal Cântico do Lar.">
+<meta property="og:title" content="30 Dias com São Miguel Arcanjo">
+<meta property="og:description" content="Uma oração por dia para proteger a sua casa, a sua família e o seu coração.">
+<meta property="og:image" content="img/capa.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fundo:#1a120d; --fundo2:#241913; --cartao:#2d2018;
+  --ouro:#e2b44f; --ouro2:#f3d48a; --creme:#f4ead8; --texto:#d9cbb4; --suave:#a8977d;
+  --botao:#2f9e44; --botao-h:#37b24d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--fundo);color:var(--texto);font-family:Lora,Georgia,serif;font-size:18px;line-height:1.65}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Cinzel,Georgia,serif;color:var(--creme);line-height:1.2}
+h2{font-size:clamp(26px,5vw,38px);text-align:center;margin-bottom:10px}
+.ouro{color:var(--ouro)}
+.linha{width:70px;height:2px;background:var(--ouro);margin:14px auto 34px;opacity:.8}
+section{padding:72px 0}
+section.alt{background:var(--fundo2)}
+
+/* botão */
+.cta{display:inline-block;background:var(--botao);color:#fff;font-family:Lora,serif;font-weight:600;font-size:19px;
+  text-decoration:none;padding:18px 34px;border-radius:12px;box-shadow:0 6px 0 #1f6e2f,0 10px 30px rgba(0,0,0,.4);
+  transition:transform .15s,background .15s;text-align:center;letter-spacing:.3px}
+.cta:hover{background:var(--botao-h);transform:translateY(-2px)}
+.cta small{display:block;font-weight:400;font-size:14px;opacity:.9}
+.centro{text-align:center}
+
+/* topo */
+.hero{position:relative;overflow:hidden;padding:56px 0 64px}
+.hero:before{content:"";position:absolute;inset:0;background:url(img/fundo.jpg) center 20%/cover;opacity:.18;filter:blur(2px)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,18,13,.3),var(--fundo) 92%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
+.capa{border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.6),0 0 0 1px rgba(226,180,79,.25);transform:rotate(-2deg);max-width:400px;margin:0 auto}
+.selo{display:inline-block;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--ouro);border:1px solid rgba(226,180,79,.5);padding:5px 14px;border-radius:30px;margin-bottom:18px}
+.hero h1{font-size:clamp(34px,6vw,54px);margin-bottom:16px}
+.hero h1 span{display:block;font-size:.5em;color:var(--ouro);letter-spacing:3px}
+.hero p.sub{font-size:20px;color:var(--creme);margin-bottom:28px}
+.mini{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;font-size:15px;color:var(--suave)}
+
+/* listas */
+.pra-quem{max-width:680px;margin:0 auto;list-style:none}
+.pra-quem li{padding:14px 0 14px 40px;position:relative;border-bottom:1px solid rgba(226,180,79,.12)}
+.pra-quem li:before{content:"✝";position:absolute;left:8px;top:13px;color:var(--ouro)}
+.texto{max-width:680px;margin:0 auto;text-align:center}
+.texto p+p{margin-top:16px}
+
+/* galeria */
+.galeria{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 18px;-webkit-overflow-scrolling:touch}
+.galeria img{flex:0 0 auto;width:min(260px,70vw);border-radius:6px;scroll-snap-align:center;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.dica{text-align:center;font-size:14px;color:var(--suave);margin-top:6px}
+
+/* partes */
+.partes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.parte{background:var(--cartao);border:1px solid rgba(226,180,79,.18);border-radius:12px;padding:22px 22px 18px}
+.parte h3{font-size:18px;margin-bottom:4px}
+.parte .dias{font-size:13px;letter-spacing:2px;color:var(--ouro);text-transform:uppercase;margin-bottom:10px}
+.parte ol{padding-left:22px;font-size:16px;color:var(--texto)}
+.parte li{margin:3px 0}
+
+/* recebe */
+.recebe{max-width:720px;margin:0 auto;display:grid;gap:12px}
+.recebe div{display:flex;gap:14px;align-items:flex-start;background:var(--cartao);border-radius:10px;padding:14px 18px}
+.recebe b{color:var(--creme);font-weight:600}
+.recebe i{font-style:normal;color:var(--ouro);font-size:20px;line-height:1.4}
+
+/* oferta */
+.oferta{max-width:560px;margin:0 auto;background:linear-gradient(180deg,#2f2219,#22180f);border:2px solid var(--ouro);border-radius:18px;padding:36px 28px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.oferta img{width:170px;margin:0 auto 20px;border-radius:4px;box-shadow:0 10px 25px rgba(0,0,0,.6)}
+.preco{font-family:Cinzel,serif;font-size:52px;color:var(--ouro2);line-height:1;margin:10px 0 4px}
+.oferta ul{list-style:none;margin:22px 0 28px;text-align:left;display:inline-block}
+.oferta li{padding:4px 0}
+.oferta li:before{content:"✓  ";color:var(--botao-h);font-weight:700}
+.garantia{display:flex;gap:18px;align-items:center;max-width:620px;margin:40px auto 0;background:var(--cartao);border-radius:14px;padding:22px}
+.garantia .n{flex:0 0 86px;height:86px;border-radius:50%;border:2px solid var(--ouro);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Cinzel,serif;color:var(--ouro);line-height:1}
+.garantia .n b{font-size:32px}.garantia .n span{font-size:11px;letter-spacing:1px}
+
+/* perguntas */
+details{max-width:720px;margin:0 auto 12px;background:var(--cartao);border-radius:10px;padding:16px 20px}
+summary{cursor:pointer;color:var(--creme);font-weight:600;list-style:none;position:relative;padding-right:28px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:0;top:-2px;color:var(--ouro);font-size:24px}
+details[open] summary:after{content:"–"}
+details p{margin-top:10px;font-size:16px}
+
+footer{padding:40px 0 110px;text-align:center;font-size:14px;color:var(--suave)}
+footer b{font-family:Cinzel,serif;color:var(--ouro);font-size:18px;display:block;margin-bottom:8px}
+
+/* botão fixo no celular */
+.fixo{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(26,18,13,.95);border-top:1px solid rgba(226,180,79,.3);display:none;z-index:10}
+.fixo .cta{display:block;padding:14px;font-size:17px;box-shadow:0 4px 0 #1f6e2f}
+
+@media (max-width:760px){
+  body{font-size:17px}
+  section{padding:56px 0}
+  .hero{padding:34px 0 48px}
+  .hero .wrap{grid-template-columns:1fr;gap:28px;text-align:center}
+  .capa{max-width:250px}
+  .mini{justify-content:center}
+  .fixo{display:block}
+  .garantia{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="capa" src="img/capa.jpg" alt="Capa do livro 30 Dias com São Miguel Arcanjo" width="700" height="993">
+    <div>
+      <div class="selo">Livro digital · Cântico do Lar</div>
+      <h1><span>30 dias com</span>São Miguel Arcanjo</h1>
+      <p class="sub">Uma oração por dia para proteger a sua casa, a sua família e o seu coração.</p>
+      <a class="cta comprar" href="https://go.hotmart.com/I108110868J">QUERO COMEÇAR MEUS 30 DIAS<small>Acesso imediato no seu e-mail</small></a>
+      <div class="mini"><span>📖 46 páginas ilustradas</span><span>📱 Leia no celular ou imprima</span><span>🛡️ Garantia de 7 dias</span></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Este livro é para você que…</h2>
+    <div class="linha"></div>
+    <ul class="pra-quem">
+      <li>quer proteger a casa e a família com oração</li>
+      <li>carrega uma preocupação com um filho, alguém doente ou um emprego</li>
+      <li>anda com o peito apertado, ansiosa ou cansada</li>
+      <li>quer criar o hábito de rezar todos os dias, mas não sabe por onde começar</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <div class="linha"></div>
+    <div class="texto">
+      <p>Todos os dias você reza <b class="ouro">uma oração sobre um tema da vida real</b>: a porta de casa, os filhos que estão longe, um exame médico, as dívidas, a ansiedade, uma decisão importante.</p>
+      <p>São poucos minutos por dia. Cada oração traz um versículo da Bíblia e um espaço <i>“Meu pedido de hoje”</i> para você escrever o nome de quem ama.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Veja por dentro</h2>
+    <div class="linha"></div>
+    <div class="galeria">
+      <img src="img/p03.jpg" alt="Oração de abertura" loading="lazy">
+      <img src="img/p04.jpg" alt="Parte 1, Proteção da Casa" loading="lazy">
+      <img src="img/p08.jpg" alt="Dia 4, Pela paz na mesa e nas conversas" loading="lazy">
+      <img src="img/p09.jpg" alt="Dia 5, Para limpar a casa de todo mal" loading="lazy">
+      <img src="img/p10.jpg" alt="Dia 6, Para a casa dormir protegida" loading="lazy">
+      <img src="img/p14.jpg" alt="Dia 9, Pelos filhos que estão longe" loading="lazy">
+      <img src="img/p30.jpg" alt="Dia 23, Para curar as feridas do passado" loading="lazy">
+    </div>
+    <p class="dica">← arraste para ver mais páginas →</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>As 30 orações</h2>
+    <div class="linha"></div>
+    <div class="partes">
+      <div class="parte"><div class="dias">Dias 1 a 6</div><h3>🏠 Proteção da Casa</h3>
+        <ol><li>Pela porta da minha casa</li><li>Por cada cômodo do meu lar</li><li>Contra a inveja e o olho mau</li><li>Pela paz na mesa e nas conversas</li><li>Para limpar a casa de todo mal</li><li>Para a casa dormir protegida</li></ol></div>
+      <div class="parte"><div class="dias">Dias 7 a 12</div><h3>👨‍👩‍👧 Proteção da Família</h3>
+        <ol start="7"><li>Pelo esposo ou pela esposa</li><li>Pelos filhos pequenos</li><li>Pelos filhos que estão longe</li><li>Pelos pais e avós</li><li>Pela união e o fim das brigas</li><li>Por quem já partiu</li></ol></div>
+      <div class="parte"><div class="dias">Dias 13 a 18</div><h3>🙏 Saúde do Corpo</h3>
+        <ol start="13"><li>Por quem está doente nesta casa</li><li>Antes de um exame ou cirurgia</li><li>Pela recuperação e pela força</li><li>Contra os vícios</li><li>Pelo sono e pelo descanso</li><li>Por quem cuida de um doente</li></ol></div>
+      <div class="parte"><div class="dias">Dias 19 a 24</div><h3>💛 Cura da Alma</h3>
+        <ol start="19"><li>Para tirar o peso do peito</li><li>Contra a ansiedade e o medo</li><li>Contra a tristeza e o desânimo</li><li>Para perdoar quem me feriu</li><li>Para curar as feridas do passado</li><li>Para voltar a ter esperança</li></ol></div>
+      <div class="parte"><div class="dias">Dias 25 a 30</div><h3>🛤 Caminhos e Trabalho</h3>
+        <ol start="25"><li>Pelo trabalho e o pão de cada dia</li><li>Por quem procura emprego</li><li>Pelas dívidas e pelas finanças</li><li>Antes de uma decisão importante</li><li>Contra os inimigos e as injustiças</li><li>Consagração final a São Miguel</li></ol></div>
+      <div class="parte"><div class="dias">E mais</div><h3>✝ Orações tradicionais</h3>
+        <ol style="list-style:none;padding-left:0"><li>Oração a São Miguel Arcanjo</li><li>Salmo 91</li><li>Santo Anjo do Senhor</li><li>Como rezar o Terço de São Miguel</li><li>Página “Graças alcançadas”</li></ol></div>
+    </div>
+    <p class="centro" style="margin-top:36px"><a class="cta comprar" href="https://go.hotmart.com/I108110868J">QUERO O LIVRO</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que você recebe</h2>
+    <div class="linha"></div>
+    <div class="recebe">
+      <div><i>✝</i><span><b>30 orações inéditas</b>, uma para cada dia</span></div>
+      <div><i>✝</i><span><b>Um versículo da Bíblia</b> em cada oração</span></div>
+      <div><i>✝</i><span>Espaço <b>“Meu pedido de hoje”</b> para escrever o nome de quem você ama</span></div>
+      <div><i>✝</i><span><b>46 páginas ilustradas</b> com pinturas devocionais</span></div>
+      <div><i>✝</i><span><b>Orações tradicionais</b>: São Miguel, Salmo 91, Santo Anjo e o Terço de São Miguel</span></div>
+      <div><i>✝</i><span>Página <b>“Graças alcançadas”</b> para anotar cada resposta de Deus</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="oferta">
+  <div class="wrap">
+    <div class="oferta">
+      <img src="img/capa.jpg" alt="" loading="lazy">
+      <h3>30 Dias com São Miguel Arcanjo</h3>
+      <div class="preco">R$ 27,00</div>
+      <div style="color:var(--suave);font-size:15px">pagamento único, sem mensalidade</div>
+      <ul>
+        <li>Livro digital em PDF</li>
+        <li>Enviado para o seu e-mail na hora</li>
+        <li>Leia no celular, no tablet ou imprima</li>
+        <li>Pix, boleto ou cartão</li>
+      </ul>
+      <a class="cta comprar" href="https://go.hotmart.com/I108110868J" style="display:block">QUERO COMEÇAR MEUS 30 DIAS<small>Compra segura pela Hotmart</small></a>
+    </div>
+    <div class="garantia">
+      <div class="n"><b>7</b><span>DIAS</span></div>
+      <p><b style="color:var(--creme)">Garantia de 7 dias.</b> Se não gostar do livro, é só pedir o reembolso pela Hotmart dentro de 7 dias e você recebe 100% do valor de volta, sem perguntas.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <div class="linha"></div>
+    <details><summary>Vou receber um livro físico?</summary><p>Não. É um livro digital (PDF). Você recebe o acesso no seu e-mail logo depois da compra e pode ler no celular ou imprimir em casa.</p></details>
+    <details><summary>Preciso rezar no mesmo horário todo dia?</summary><p>Não é obrigatório, mas ajuda a criar o hábito. São poucos minutos por dia. Se perder um dia, é só continuar de onde parou.</p></details>
+    <details><summary>Posso rezar por outra pessoa?</summary><p>Pode. Cada oração tem o espaço “Meu pedido de hoje” para você escrever o nome de quem quer entregar à proteção de São Miguel.</p></details>
+    <details><summary>Como pago?</summary><p>Pela Hotmart, com Pix, boleto ou cartão. Pagamento único, sem mensalidade.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Pede o reembolso pela Hotmart e recebe todo o valor de volta.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>Cântico do Lar</b>
+    Música católica para a sua casa.<br><br>
+    Este livro é um convite à oração e à confiança em Deus, que responde no tempo dele.<br>
+    Não substitui acompanhamento médico, psicológico ou espiritual.
+  </div>
+</footer>
+
+<div class="fixo"><a class="cta comprar" href="https://go.hotmart.com/I108110868J">QUERO COMEÇAR MEUS 30 DIAS</a></div>
+
+</body>
+</html>
